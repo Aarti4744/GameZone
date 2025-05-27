@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.TextInputLayout.OutlinedBox.WhiteBorder" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">#00000000</item> <!-- transparent or your background color -->
+        <item name="boxStrokeColor">#FFFFFF</item> <!-- white border -->
+        <item name="hintTextColor">@color/white</item>
+        <item name="android:textColorHint">#CCCCCC</item>
+        <item name="android:textColor">#FFFFFF</item> <!-- input text color -->
+    </style>
+
+</resources>
+

@@ -6,6 +6,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.games.gamezone.Registration.RegisterActivity
 import com.games.gamezone.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -32,6 +33,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun startGame() {
-        startActivity(Intent(this, GameActivity::class.java))
+        startActivity(Intent(this, RegisterActivity::class.java))
     }
 }

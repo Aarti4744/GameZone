@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1a237e"
+    android:padding="16dp">
+
+    <!-- Header Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_profile"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Link to profile"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_close"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="2dp" />
+
+    </LinearLayout>
+
+    <!-- Game Board -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp">
+
+        <!-- Row 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/cell_0_0"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/cell_background"
+                android:src="@drawable/ic_circle"
+                android:scaleType="centerInside"
+                android:padding="16dp" />
+
+            <ImageView
+                android:id="@+id/cell_0_1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/cell_background"
+                android:src="@drawable/ic_cross"
+                android:scaleType="centerInside"
+                android:padding="16dp" />
+
+            <ImageView
+                android:id="@+id/cell_0_2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/cell_background"
+                android:src="@drawable/ic_circle"
+                android:scaleType="centerInside"
+                android:padding="16dp" />
+
+        </LinearLayout>
+
+        <!-- Row 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/cell_1_0"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/cell_background"
+                android:src="@drawable/ic_cross"
+                android:scaleType="centerInside"
+                android:padding="16dp" />
+
+            <ImageView
+                android:id="@+id/cell_1_1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/cell_background"
+                android:src="@drawable/ic_cross"
+                android:scaleType="centerInside"
+                android:padding="16dp" />
+
+            <ImageView
+                android:id="@+id/cell_1_2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/cell_background"
+                android:src="@drawable/ic_circle"
+                android:scaleType="centerInside"
+                android:padding="16dp" />
+
+        </LinearLayout>
+
+        <!-- Row 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/cell_2_0"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/cell_background"
+                android:src="@drawable/ic_cross"
+                android:scaleType="centerInside"
+                android:padding="16dp" />
+
+            <ImageView
+                android:id="@+id/cell_2_1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/cell_background"
+                android:src="@drawable/ic_circle"
+                android:scaleType="centerInside"
+                android:padding="16dp" />
+
+            <ImageView
+                android:id="@+id/cell_2_2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/cell_background"
+                android:scaleType="centerInside"
+                android:padding="16dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Bottom Control Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="40dp">
+
+        <ImageView
+            android:id="@+id/btn_settings"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/circular_button_background"
+            android:src="@drawable/ic_settings"
+            android:padding="12dp"
+            android:scaleType="centerInside" />
+
+        <ImageView
+            android:id="@+id/btn_pause"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/circular_button_background"
+            android:src="@drawable/ic_pause"
+            android:padding="12dp"
+            android:scaleType="centerInside" />
+
+    </LinearLayout>
+
+</LinearLayout>

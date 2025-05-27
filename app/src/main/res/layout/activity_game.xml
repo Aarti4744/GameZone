@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="16dp"
+    tools:context=".GameActivity">
+
+    <!-- Heading -->
+    <TextView
+        android:id="@+id/tvHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tic Tac Toe"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Game Status -->
+    <TextView
+        android:id="@+id/tvGameStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Game not started"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#009688"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/tvHeading"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- 3x3 GridLayout for Tic Tac Toe -->
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:alignmentMode="alignMargins"
+        android:useDefaultMargins="true"
+        app:layout_constraintTop_toBottomOf="@id/tvGameStatus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- 9 Buttons for grid -->
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:text=""
+            android:backgroundTint="#673AB7"
+            android:textColor="@android:color/white"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_margin="4dp" />
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:text=""
+            android:backgroundTint="#673AB7"
+            android:textColor="@android:color/white"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_margin="4dp" />
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:text=""
+            android:backgroundTint="#673AB7"
+            android:textColor="@android:color/white"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_margin="4dp" />
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:text=""
+            android:backgroundTint="#673AB7"
+            android:textColor="@android:color/white"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_margin="4dp" />
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:text=""
+            android:backgroundTint="#673AB7"
+            android:textColor="@android:color/white"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_margin="4dp" />
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:text=""
+            android:backgroundTint="#673AB7"
+            android:textColor="@android:color/white"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_margin="4dp" />
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:text=""
+            android:backgroundTint="#673AB7"
+            android:textColor="@android:color/white"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_margin="4dp" />
+        <Button
+            android:id="@+id/btn8"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:text=""
+            android:backgroundTint="#673AB7"
+            android:textColor="@android:color/white"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_margin="4dp" />
+        <Button
+            android:id="@+id/btn9"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:text=""
+            android:backgroundTint="#673AB7"
+            android:textColor="@android:color/white"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_margin="4dp" />
+    </GridLayout>
+
+    <!-- Start Game Button -->
+    <Button
+        android:id="@+id/btnStartGame"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="Start Game"
+        android:textSize="16sp"
+        android:backgroundTint="#4CAF50"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@id/gridLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
